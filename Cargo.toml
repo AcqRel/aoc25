@@ -1,0 +1,8 @@
+[package]
+name = "aoc25"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "day2"
+path = "day2/main.rs"
