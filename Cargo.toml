@@ -1,3 +1,5 @@
+cargo-features = ["profile-rustflags"]
+
 [package]
 name = "aoc25"
 version = "0.1.0"
@@ -6,3 +8,11 @@ edition = "2024"
 [[bin]]
 name = "day2"
 path = "day2/main.rs"
+
+[[bin]]
+name = "day3"
+path = "day3/fast.rs"
+
+[profile.release]
+rustflags = ["-C", "target-cpu=native"]
+codegen-units = 1
